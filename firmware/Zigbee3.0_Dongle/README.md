@@ -21,7 +21,7 @@ Currenly recommended firmware for the zigpy/bellows based ZHA integration in Hom
 - General upstream bug-fixes from Silabs EmberZNet 6.7.9.0 as per https://www.silabs.com/documents/public/release-notes/emberznet-release-notes-6.7.9.0.pdf
 
 #### 678 (Zigbee EmberZNet 6.7.8)
-- Default release shipped with ITead Zigbee 3.0 USB Dongle Model 9888010100045 https://www.itead.cc/zigbee-3-0-usb-dongle.html
+- Default release with EZSP v8 support shipped with ITead Zigbee 3.0 USB Dongle Model 9888010100045 https://www.itead.cc/zigbee-3-0-usb-dongle.html
 
 #### 655 (Zigbee EmberZNet 6.5.5)
 - Legacy firmware for backwards compatible with older applications that are only compatible with EZSP v4, EZSP v5 or/and EZSP v6.
