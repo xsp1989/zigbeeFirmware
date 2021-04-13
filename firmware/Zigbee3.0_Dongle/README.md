@@ -51,10 +51,9 @@ Commonly used shorthand and acronyms used in firmware image file names for Silab
 ## Firmware recovery procedue
 
 1. ETX - Pin PB01 ERX Pin PB00 connect to your pc
-2. Ground PA00
-3. Temporary ground the reset pin Z_RST (nRST) to reset
-4. Choice "1. upload gbl"
-5. Using xmodem(128 byte) send this ota file to you device.
+2. Press and hold the “BOOT” button, then press the “RST” button, and then release it at the same time
+3. Choice "1. upload gbl"
+4. Using xmodem(128 byte) send this ota file to you device.
 
 ## Configurations used when compiling your own firmware with Silabs Simplicity Studio and EmberZNet Zigbee Stack
 
@@ -69,9 +68,9 @@ DCDC
 
 Configuration Parameter | Value
 ----------------------- | ------
-Address Table Size | 16
+Address Table Size | 8
 Child Table Size | 32
-Source Routes | 200
+Source Routes | 7
 CTUNE value | 128
 
 The remaining parameters are at the default values.
