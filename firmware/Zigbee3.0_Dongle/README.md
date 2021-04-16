@@ -12,7 +12,7 @@ Nopte! Flashing custom firmwares may void your warranty. Use at your own Risk!
 
 Currenly recommended firmware for the zigpy/bellows based ZHA integration in Home Assistant:
 
-- ncp-uart-nsw_679_115200.gbl
+- ncp-uart-sw_679_115200.gbl
 
 ## Versions and changelog
 
