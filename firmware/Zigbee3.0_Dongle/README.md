@@ -48,7 +48,38 @@ Commonly used shorthand and acronyms used in firmware image file names for Silab
 * pb0-pb1 = Port used for TXD (Transceive Data) and RXD (Receive Data)
 * pa0 = Bootloader GPIO Activation
 
-## Firmware recovery procedue
+## Firmware upgrade procedure
+
+#### Prerequisites before upgrading
+
+ - To flash ITead Zigbee 3.0 USB Dongle Model 9888010100045 make sure that the operating-system has device drivers for the CH340E (WCH CH340 E) USB to Serial chip that dongle has, (most newer operating-systems already has has correct device drivers built-in for CH340).
+ -  Always stop any software applications/services/integrations that are connected to the USB dongle.
+ -  Recommend backup NVRAM on the adapter before upgrading firmware. NVRAM on EZSP (EmberZNet Serial Protocol) based adapters can be backuped (and restored) with example zigpy/bellows https://github.com/zigpy/bellows#nvram-backup-and-restore
+
+#### Flashing firmware for ITEAD Zigbee 3.0 USB Dongle
+
+Firmware can be updated via Elelabs EZSP Firmware Update Utility after stop any software that use it.  
+
+https://github.com/Elelabs/elelabs-zigbee-ezsp-utility/
+
+Example command (copy firmware file to elelabs-zigbee-ezsp-utility data directory and substitute '/dev/ttyUSB1' for the actual path to your USB stick):
+```
+#python3 Elelabs_EzspFwUtility.py flash -f data/ncp-uart-sw_679_115200.gbl -p /dev/ttyUSB0
+#python3 Elelabs_EzspFwUtility.py probe -p /dev/ttyUSB0
+```
+Alternatively could update firmware using Docker image by walthowd. Substitute '/dev/ttyUSB1' for the actual path to your USB stick.
+
+https://github.com/walthowd/husbzb-firmware
+
+Example command (substitute '/dev/ttyUSB1' for the actual path to your USB stick):
+```
+wget https://github.com/xsp1989/zigbeeFirmware/blob/master/firmware/Zigbee3.0_Dongle/ncp-uart-sw_679_115200.gbl
+docker run --rm --device=/dev/ttyUSB1:/dev/ttyUSB1 -it -v `pwd`:/data walthowd/husbzb-firmware bash
+./ncp.py flash -p /dev/ttyUSB1 -f /data/ncp-uart-sw_679_115200.gbl
+./ncp.py scan
+```
+
+## Firmware recovery procedure
 
 1. ETX - Pin PB01 ERX Pin PB00 connect to your pc
 2. Press and hold the “BOOT” button, then press the “RST” button, and then release it at the same time
