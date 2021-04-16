@@ -66,12 +66,17 @@ EZSP Version 8
 EmberZNet 6.7.9
 DCDC
 
-Configuration Parameter | Value
------------------------ | ------
-Address Table Size | 8
-Child Table Size | 32
-Source Routes | 7
-CTUNE value | 128
+Firmware Configuration Parameter | Value | Description as seen in ZHA zigpy ezsp config
+-------------------------------- | ----- | ----------------------------------------------
+CTUNE value | 128 |  CTune HFXO Capacitor Bank calibration value
+Address Table Size | 32| CONFIG_ADDRESS_TABLE_SIZE
+Child Table Size | 64 | CONFIG_MAX_END_DEVICE_CHILDREN
+Source Routes | 200 | CONFIG_SOURCE_ROUTE_TABLE_SIZE
+? | 16 | CONFIG_ROUTE_TABLE_SIZE
+? | 30 | CONFIG_APS_UNICAST_MESSAGE_COUNT
+? | 254 | CONFIG_PACKET_BUFFER_COUNT
+? | 32 | CONFIG_BINDING_TABLE_SIZE
+? | 26 | CONFIG_NEIGHBOR_TABLE_SIZE
 
 The remaining parameters are at the default values.
 
