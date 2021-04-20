@@ -39,7 +39,8 @@ Commonly used shorthand and acronyms used in firmware image file names for Silab
 * com = Combined (necessary for EFR32 Series 1)
 * uart = UART interface
 * nsw = no flow control
-* sw = software flow control
+* sw = software flow control (XON/XOFF flow control)
+* hw = hardware flow control (RTS/CTS flow control)
 * 655 / 678 / 679 = EmberZNet Version which also indoicate version for EZSP (EmberZNet Serial Protocol)
 * 115200 = Baud rate speed set to 115200
 * 57600 = Baud rate speed set to 57600
