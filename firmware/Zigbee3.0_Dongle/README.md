@@ -91,6 +91,8 @@ docker run --rm --device=/dev/ttyUSB1:/dev/ttyUSB1 -it -v `pwd`:/data walthowd/h
 
 #### EmberZNet NCP Zigbee application firmware
 
+EmberZNet NCP Zigbee application configuration parameters when building Silabs EmberZNet firmware for ITead Zigbee 3.0 USB Dongle Model 9888010100045
+
 EFR32MG21 target
 NCP UART TX --> PA0
 NCP UART RC <-- PA1
@@ -98,14 +100,30 @@ EZSP Version 8
 EmberZNet 6.7.9
 DCDC
 
-Configuration Parameter | Value
------------------------ | ------
-Address Table Size | 8
-Child Table Size | 32
-Source Routes | 7
-CTUNE value | 128
+Firmware Configuration Parameter | Value | Description as seen in ZHA zigpy ezsp config
+-------------------------------- | ----- | ----------------------------------------------
+Part | EFR32MG21A020F768IM32 | Silicon Labs EFR32MG21 Series 2 Multiprotocol Wireless SoC
+CTUNE value | 128 |  CTune HFXO Capacitor Bank calibration value
+Address Table Size | 32| CONFIG_ADDRESS_TABLE_SIZE
+Child Table Size | 64 | CONFIG_MAX_END_DEVICE_CHILDREN
+Source Routes | 200 | CONFIG_SOURCE_ROUTE_TABLE_SIZE
+? | 16 | CONFIG_ROUTE_TABLE_SIZE
+? | 30 | CONFIG_APS_UNICAST_MESSAGE_COUNT
+? | 254 | CONFIG_PACKET_BUFFER_COUNT
+? | 32 | CONFIG_BINDING_TABLE_SIZE
+? | 26 | CONFIG_NEIGHBOR_TABLE_SIZE
+GND | ? | Ground
+TX | PB01 | EFR32MG21 chip pin for Transmitter Data (TXD)
+RX | PB00 | EFR32MG21 chippin  for Receiving Data (RXD)
+LED | PC00 | LED
+BTL | PA00 | "BOOT" button for Bootloader
+RST | ? | Reset Z_RST (nRST)
+RTS | PC01 | EFR32MG21 chip pin RTS (Request to Send) for hardware flow control
+CTS | PC00 | EFR32MG21 chip pin CTS (Clear to Send) for hardware flow control
 
 The remaining parameters are at the default values.
+
+Note! RTS and CTS is not connected from EFR32MG21 to CH340 USB-to-Serial-chip on V1.3 of ITead Zigbee 3.0 USB Dongle Model 9888010100045.
 
 #### Gecko Bootloader firmware
 
