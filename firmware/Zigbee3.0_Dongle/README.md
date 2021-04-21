@@ -80,12 +80,18 @@ Source Routes | 200 | CONFIG_SOURCE_ROUTE_TABLE_SIZE
 ? | 254 | CONFIG_PACKET_BUFFER_COUNT
 ? | 32 | CONFIG_BINDING_TABLE_SIZE
 ? | 26 | CONFIG_NEIGHBOR_TABLE_SIZE
-TX | PA00 | EFR32MG21 chip pin for Transmitter Data (TXD)
-RX | PA01 | EFR32MG21 chippin  for Receiving Data (RXD)
+GND | ? | Ground
+TX | PB01 | EFR32MG21 chip pin for Transmitter Data (TXD)
+RX | PB00 | EFR32MG21 chippin  for Receiving Data (RXD)
+LED | PC00 | LED
+BTL | PA00 | "BOOT" button for Bootloader
+RST | ? | Reset Z_RST (nRST)
 RTS | PC01 | EFR32MG21 chip pin RTS (Request to Send) for hardware flow control
 CTS | PC00 | EFR32MG21 chip pin CTS (Clear to Send) for hardware flow control
 
 The remaining parameters are at the default values.
+
+Note! RTS and CTS is not connected from EFR32MG21 to CH340 USB-to-Serial-chip on V1.3 of ITead Zigbee 3.0 USB Dongle Model 9888010100045.
 
 #### Gecko Bootloader firmware
 
