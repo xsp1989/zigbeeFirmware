@@ -84,7 +84,7 @@ GND | ? | Ground
 TX | PB01 | EFR32MG21 chip pin for Transmitter Data (TXD)
 RX | PB00 | EFR32MG21 chippin  for Receiving Data (RXD)
 LED | PC00 | LED
-BTL | PA00 | "BOOT" button for Bootloader
+BTL | PA00 | "BOOT" button for Bootloader (Low = BTL boot)
 RST | ? | Reset Z_RST (nRST)
 RTS | PC01 | EFR32MG21 chip pin RTS (Request to Send) for hardware flow control
 CTS | PC00 | EFR32MG21 chip pin CTS (Clear to Send) for hardware flow control
