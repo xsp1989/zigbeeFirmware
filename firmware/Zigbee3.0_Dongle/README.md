@@ -73,7 +73,7 @@ Firmware Configuration Parameter | Value | Description as seen in ZHA zigpy ezsp
 Part | EFR32MG21A020F768IM32 | Silicon Labs EFR32MG21 Series 2 Multiprotocol Wireless SoC
 CTUNE value | 128 |  CTune HFXO Capacitor Bank calibration value
 Address Table Size | 32| CONFIG_ADDRESS_TABLE_SIZE
-Child Table Size | 64 | CONFIG_MAX_END_DEVICE_CHILDREN
+Child Table Size | 32 | CONFIG_MAX_END_DEVICE_CHILDREN
 Source Routes | 200 | CONFIG_SOURCE_ROUTE_TABLE_SIZE
 ? | 16 | CONFIG_ROUTE_TABLE_SIZE
 ? | 30 | CONFIG_APS_UNICAST_MESSAGE_COUNT
