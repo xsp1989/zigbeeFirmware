@@ -2,7 +2,14 @@ Silicon Labs Zigbee 3.0 / 3.x firmware.
 
 ## Compatible hardware
 
-Built, compiled, and tested with ITead Zigbee 3.0 USB Dongle Model 9888010100045 https://www.itead.cc/zigbee-3-0-usb-dongle.html
+Built, compiled, and tested with ITead Zigbee 3.0 USB Dongle and easyiot zigbee 3.0 USB Dongle. 
+
+- https://www.itead.cc/zigbee-3-0-usb-dongle.html   
+
+  ![itead dongle](https://github.com/xsp1989/zigbeeFirmware/blob/master/Pic/Itead%20Dongle.png)
+- https://www.aliexpress.com/item/1005002791666029.html
+
+  ![easyiot dongle](https://github.com/xsp1989/zigbeeFirmware/blob/master/Pic/easyiot%20Dongle.png)
 
 Zigbee 3.0 USB Dongle Model 9888010100045 comes pre-flashed from ITead with with unsigned standard Silicon Labs Zigbee NCP firmware.
 
@@ -15,6 +22,21 @@ Currenly recommended firmware for the zigpy/bellows based ZHA integration in Hom
 - ncp-uart-sw_679_115200.gbl
 
 ## Versions and changelog
+
+#### 6.10.3.0 (Zibee EmberZNet 6.10.3.0)
+Configuration Parameter	| Value
+------------------------|------
+Part | EFR32MG21A020F768IM32
+Version | EZSP 6.10.3.0
+CTUNE value	| 128
+Address Table Size | 32
+Child Table Size | 32
+Source Routes | 200
+TX | PB01
+RX | PB00
+CTS	| -
+RTS	| -
+LED | -
 
 #### 679 (Zigbee EmberZNet 6.7.9)
 - Changed configuration to set HFXO CTUNE value to 128, 
