@@ -1,29 +1,45 @@
-Silicon Labs Zigbee 3.0 / 3.x firmware.
+EmberZNet (EZSP) Zigbee 3.0 / Zigbee Coordinator (NCP) firmmware for Silicon Labs EFR32MG21 (EFR32 Mighty Gecko Series 2) USB dongle.
+
+Warning! Flashing custom firmwares may void your warranty. Use at your own Risk!
 
 ## Compatible hardware
 
-Built, compiled, and tested with ITead Zigbee 3.0 USB Dongle and easyiot zigbee 3.0 USB Dongle. 
-
-- https://www.itead.cc/zigbee-3-0-usb-dongle.html   
+Initially built, compiled, and tested with the original first-generation barebone ITead Zigbee 3.0 USB Dongle Model 9888010100045:
 
   ![itead dongle](https://github.com/xsp1989/zigbeeFirmware/blob/master/Pic/Itead%20Dongle.png)
-- https://www.aliexpress.com/item/1005002791666029.html
+  
+Zigbee 3.0 USB Dongle Model 9888010100045 came pre-flashed from ITead with with unsigned standard Silicon Labs Zigbee NCP firmware.
+
+Note! The original barebone dongle with built-in antenna has been replaced by model "ZBDongle-E" which has an external antenna:
+
+  - https://www.itead.cc/zigbee-3-0-usb-dongle.html   
+
+Also tested with easyiot zigbee 3.0 USB Dongle model ZB-GW04 based on "SM-011 v1.0" Zigbee module from CoolKit-Technologies:
+
+  - https://easyiot.aliexpress.com/store/5839056
+    - https://www.aliexpress.com/item/1005002791666029.html
+    - https://www.aliexpress.com/item/1005003736123654.html
+    - https://www.aliexpress.com/item/1005003692212448.html
+    - https://www.aliexpress.com/item/1005003578599189.html
+    - https://www.aliexpress.com/item/1005003814709714.html
+    - https://www.aliexpress.com/item/1005004562353633.html
+    - https://www.aliexpress.com/item/1005003501898658.html
+    - https://www.aliexpress.com/item/1005004410926709.html
+    - https://www.aliexpress.com/item/1005002469947910.html
 
   ![easyiot dongle](https://github.com/xsp1989/zigbeeFirmware/blob/master/Pic/easyiot%20Dongle.png)
 
-Zigbee 3.0 USB Dongle Model 9888010100045 comes pre-flashed from ITead with with unsigned standard Silicon Labs Zigbee NCP firmware.
-
-Nopte! Flashing custom firmwares may void your warranty. Use at your own Risk!
-
 ## Recommended firmware
 
-Currenly recommended firmware for the zigpy/bellows based ZHA integration in Home Assistant:
+At the time of writting (2022-08-08) EmberZNet Zigbee version 6.10.3.0 firmware is recommended for the ZHA integration in Home Assistant (which depends on the open source zigpy and bellows libraries):
 
-- ncp-uart-sw_679_115200.gbl
+- ncp-uart-sw_v6.10.3_115200.gbl
+
+The same firmware has also been confirmed to work good with OpenHAB Zigbee Binding, Zigbee2MQTT, IoBroker, Zigbee Plugin for Domoticz, and Zigbee Plugin for Jeedom.
 
 ## Versions and changelog
 
-#### 6.10.3.0 (Zibee EmberZNet 6.10.3.0)
+#### 6.10.3.0 (EmberZNet Zigbee 6.10.3.0)
 Configuration Parameter	| Value
 ------------------------|------
 Part | EFR32MG21A020F768IM32
