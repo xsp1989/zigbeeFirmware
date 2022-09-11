@@ -17,15 +17,15 @@ Note! The original barebone dongle with built-in antenna has been replaced by mo
 Also tested with easyiot zigbee 3.0 USB Dongle model ZB-GW04 based on "SM-011 v1.0" Zigbee module from CoolKit-Technologies:
 
   - https://easyiot.aliexpress.com/store/5839056
-    - https://www.aliexpress.com/item/1005002791666029.html
-    - https://www.aliexpress.com/item/1005003736123654.html
-    - https://www.aliexpress.com/item/1005003692212448.html
-    - https://www.aliexpress.com/item/1005003578599189.html
-    - https://www.aliexpress.com/item/1005003814709714.html
-    - https://www.aliexpress.com/item/1005004562353633.html
-    - https://www.aliexpress.com/item/1005003501898658.html
-    - https://www.aliexpress.com/item/1005004410926709.html
-    - https://www.aliexpress.com/item/1005002469947910.html
+  - https://www.aliexpress.com/item/1005002791666029.html
+  - https://www.aliexpress.com/item/1005003736123654.html
+  - https://www.aliexpress.com/item/1005003692212448.html
+  - https://www.aliexpress.com/item/1005003578599189.html
+  - https://www.aliexpress.com/item/1005003814709714.html
+  - https://www.aliexpress.com/item/1005004562353633.html
+  - https://www.aliexpress.com/item/1005003501898658.html
+  - https://www.aliexpress.com/item/1005004410926709.html
+  - https://www.aliexpress.com/item/1005002469947910.html
 
   ![easyiot dongle](https://github.com/xsp1989/zigbeeFirmware/blob/master/Pic/easyiot%20Dongle.png)
 
