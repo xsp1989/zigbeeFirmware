@@ -140,7 +140,7 @@ Configuration Parameter | Value
 ----------------------- | ------
 Address Table Size | 8
 Child Table Size | 32
-Source Routes | 7
+Source Routes | 128
 CTUNE value | 128
 
 The remaining parameters are at the default values.
