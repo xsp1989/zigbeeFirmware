@@ -10,11 +10,7 @@ Initially built, compiled, and tested with the original first-generation barebon
   
 Zigbee 3.0 USB Dongle Model 9888010100045 came pre-flashed from ITead with with unsigned standard Silicon Labs Zigbee NCP firmware.
 
-Note! The original barebone dongle with built-in antenna has been replaced by model "ZBDongle-E" which has an external antenna:
-
-  - https://www.itead.cc/zigbee-3-0-usb-dongle.html   
-
-Also tested with easyiot zigbee 3.0 USB Dongle model ZB-GW04 based on "SM-011 v1.0" Zigbee module from CoolKit-Technologies:
+Also tested with easyiot zigbee 3.0 USB Dongle model ZB-GW04 based on "SM-011 v1.0" Zigbee module:
 
   - https://easyiot.aliexpress.com/store/5839056
   - https://www.aliexpress.com/item/1005002791666029.html
