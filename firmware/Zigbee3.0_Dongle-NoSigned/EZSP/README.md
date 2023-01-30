@@ -46,9 +46,9 @@ Child Table Size | 32
 Source Routes | 200
 TX | PB01
 RX | PB00
-CTS	| -
-RTS	| -
-LED | -
+CTS	| PD03
+RTS	| PD04
+LED | PC00
 
 #### 679 (Zigbee EmberZNet 6.7.9)
 - Changed configuration to set HFXO CTUNE value to 128, 
@@ -80,8 +80,8 @@ Commonly used shorthand and acronyms used in firmware image file names for Silab
 * 57600 = Baud rate speed set to 57600
 * std = Standalone
 * btl = Bootloader
-* pb0-pb1 = Port used for TXD (Transceive Data) and RXD (Receive Data)
-* pa0 = Bootloader GPIO Activation
+* PB00-PB01 = Port used for TXD (Transceive Data) and RXD (Receive Data)
+* PA00 = Bootloader GPIO Activation
 
 ## Firmware upgrade procedure
 
