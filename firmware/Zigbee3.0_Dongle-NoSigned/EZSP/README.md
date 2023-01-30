@@ -12,7 +12,7 @@ Zigbee 3.0 USB Dongle Model 9888010100045 came pre-flashed from ITead with with 
 
 Also tested with easyiot zigbee 3.0 USB Dongle model ZB-GW04 based on "SM-011 v1.0" Zigbee module:
 
-  - https://easyiot.aliexpress.com/store/5839056
+  - https://easyiot.aliexpress.com/store/all-wholesale-products/1101491524.html
   - https://www.aliexpress.com/item/1005002791666029.html
   - https://www.aliexpress.com/item/1005003736123654.html
   - https://www.aliexpress.com/item/1005003692212448.html
