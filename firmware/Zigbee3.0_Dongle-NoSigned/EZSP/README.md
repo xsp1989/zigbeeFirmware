@@ -8,7 +8,7 @@ Initially built, compiled, and tested with the original first-generation barebon
 
   ![itead dongle](https://github.com/xsp1989/zigbeeFirmware/blob/master/Pic/Itead%20Dongle.png)
   
-Zigbee 3.0 USB Dongle Model 9888010100045 came pre-flashed from ITead with with unsigned standard Silicon Labs Zigbee NCP firmware.
+Zigbee 3.0 USB Dongle Model 9888010100045 came pre-flashed from ITead with unsigned standard Silicon Labs Zigbee NCP firmware.
 
 Also tested with easyiot zigbee 3.0 USB Dongle model ZB-GW04 based on "SM-011 v1.0" Zigbee module:
 
