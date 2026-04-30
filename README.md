@@ -1,6 +1,6 @@
 # Firmware description
 
-## ZigbeeBridge_SM-011-Singed
+## ZigbeeBridge_SM-011-Signed
 The following two bridges are used
 
 - ![itead bridge](https://github.com/xsp1989/zigbeeFirmware/blob/master/Pic/Sonoff_ZigbeeBridge.png)
