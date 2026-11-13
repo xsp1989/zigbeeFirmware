@@ -1,11 +1,13 @@
 # Firmware description
 
 ## ZigbeeBridge_SM-011-Signed
-The following two bridges are used
+The following two three are used
 
 - ![itead bridge](https://github.com/xsp1989/zigbeeFirmware/blob/master/Pic/Sonoff_ZigbeeBridge.png)
 
 - ![easyiot dongle](https://github.com/xsp1989/zigbeeFirmware/blob/master/Pic/ZY_ZigbeeGW.jpg)
+
+- ![zb-gw03-v1_4](Pic/zb-gw03-v1_4-front.jpg)
 
 
 ## Zigbee3.0_Dongle-NoSigned
